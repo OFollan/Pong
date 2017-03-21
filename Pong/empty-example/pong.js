@@ -50,7 +50,6 @@ function draw() {
         text("Up - Down", 550, 30);
         text("Use the slider to change paddle-speed", 100, 90);
         text("Press Play when you are ready", 100, 130);
-
     }
 }
 
