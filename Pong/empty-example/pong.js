@@ -15,7 +15,7 @@ function setup() {
     createCanvas(CanvasWidth, CanvasHeight)
     button = createButton("Play");
     button.mousePressed(resetGame);
-    speedSlider = createSlider(1,9,2);
+    speedSlider = createSlider(1, 9, 2);
 }
 
 function resetGame() {
@@ -48,6 +48,7 @@ function draw() {
         textSize(30);
         text("Q - Z", 10, 30);
         text("Up - Down", 550, 30);
+        text("Use the slider to change paddle-speed", 100, 90);
     }
 }
 
