@@ -1,1 +1,1 @@
-web: sh -c 'cd Pong/empty-example/ && node server.js'
+web: node Pong/empty-example/server.js
