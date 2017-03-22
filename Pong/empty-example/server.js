@@ -1,20 +1,18 @@
-var http = require('http')
-
-
 var express = require('express');
 var app = express();
-var server = app.listen(3000);
 
-app.use(express.static('public'));
+app.set('port', (process.env.PORT || 5000));
 
-console.log("Hello")
+app.use(express.static(__dirname + '/public'));
 
-var socket = require('socket.io');
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 
-var io = socket(server);
+app.get('/', function(request, response) {
+  response.render('pages/index');
+});
 
-io.sockets.on('connection', newConnection);
-
-function newConnection(socket){
-	console.log(socket);
-}
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
