@@ -1,0 +1,21 @@
+{
+  "name": "socket_pong",
+  "version": "1.0.0",
+  "description": "Trying out Pong",
+  "main": "pong.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "sockets",
+    "p5.js",
+    "pong"
+  ],
+  "author": "Øyvind Follan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
