@@ -100,7 +100,7 @@ function gameBall() {
     gameBallInCourt = true;
     this.x = CanvasWidth / 2;
     this.y = (CanvasHeight) / 2;
-    this.ySpeed = 0;
+    this.ySpeed = ballSpeed;
     this.xSpeed = -ballSpeed;
     this.Update = function() {
         if (this.CollideWithWalls()) {
